@@ -4,8 +4,8 @@
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
-# Keep preview deployments out of Google
-https://:project.pages.dev/*
+# Keep the workers.dev preview out of Google
+https://ihe-website.missjpmejia.workers.dev/*
   X-Robots-Tag: noindex
 
 /assets/fonts/*
