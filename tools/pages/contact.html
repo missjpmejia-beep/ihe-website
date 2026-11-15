@@ -1,0 +1,57 @@
+<!--{"path": "/contact/", "title": "Get a Demolition Quote | IHE Demolition", "description": "Tell us about your project for a free site visit and quote. Call 01977 644489 or email info@ih-equipment.co.uk. We reply within 48 hours.", "nav": "contact", "cta": false, "scripts": ["/assets/js/contact.js"], "breadcrumb": [["Home", "/"], ["Contact", "/contact/"]], "hero": {"eyebrow": "Contact", "title": "Get a free quote", "lead": "Tell us about your project and we'll get back to you within 48 hours. Most jobs need a quick site visit before we can give you an accurate price."}}-->
+    <section class="section">
+      <div class="wrap contact-grid">
+        <div>
+          <h2>Tell us about the job</h2>
+          <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="subject" value="New enquiry from the IHE Demolition website">
+            <input type="hidden" name="from_name" value="IHE Demolition website">
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="form-grid">
+              <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="f-company">Company <span class="opt">(optional)</span></label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+              <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="f-postcode">Site postcode</label><input id="f-postcode" name="site_postcode" type="text" autocomplete="postal-code" required></div>
+              <div class="field"><label for="f-service">Type of work</label>
+                <select id="f-service" name="type_of_work" required>
+                  <option value="">Choose one</option>
+                  <option>Demolition</option>
+                  <option>Soft strip</option>
+                  <option>Dismantling</option>
+                  <option>Asbestos</option>
+                  <option>Waste &amp; recycling</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+              <div class="field full"><label for="f-start">Rough start date <span class="opt">(optional)</span></label>
+                <select id="f-start" name="start_date">
+                  <option value="">Choose one</option>
+                  <option>As soon as possible</option>
+                  <option>Within a month</option>
+                  <option>1 to 3 months</option>
+                  <option>3 months or more</option>
+                  <option>Just planning</option>
+                </select>
+              </div>
+              <div class="field full"><label for="f-message">About the job</label><textarea id="f-message" name="message" required placeholder="What needs doing, the type and size of building, access, and anything else we should know."></textarea></div>
+            </div>
+            <p class="form-note">Got photos or drawings? Email them to <a href="mailto:info@ih-equipment.co.uk">info@ih-equipment.co.uk</a> after sending this form. We only use your details to reply to your enquiry. See our <a href="/privacy/">privacy notice</a>.</p>
+            <button class="btn btn-primary" type="submit">Send enquiry</button>
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="contact-card" aria-label="Contact details">
+          <h2>Prefer to talk?</h2>
+          <dl>
+            <div><dt>Phone</dt><dd><a class="big" href="tel:+441977644489">01977 644489</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:info@ih-equipment.co.uk">info@ih-equipment.co.uk</a></dd></div>
+            <div><dt>Based in</dt><dd>South Kirkby, West Yorkshire</dd></div>
+            <div><dt>Areas covered</dt><dd>Across Yorkshire, including Leeds, Wakefield, Doncaster and York</dd></div>
+            <div><dt>Response time</dt><dd>We reply to every enquiry within 48 hours</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
